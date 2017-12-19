@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		059E08BB774EABF3CC9C2A50 /* Pods_Boxing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B77CC39BF7B9C538CFE2F14 /* Pods_Boxing.framework */; };
 		6089FB3D1FE900BE001D0C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6089FB3C1FE900BE001D0C00 /* AppDelegate.swift */; };
 		6089FB3F1FE900BE001D0C00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6089FB3E1FE900BE001D0C00 /* ViewController.swift */; };
 		6089FB421FE900BE001D0C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6089FB401FE900BE001D0C00 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B77CC39BF7B9C538CFE2F14 /* Pods_Boxing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boxing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6089FB391FE900BE001D0C00 /* Boxing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6089FB3C1FE900BE001D0C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6089FB3E1FE900BE001D0C00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		6089FB581FE900BE001D0C00 /* BoxingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6089FB5C1FE900BE001D0C00 /* BoxingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingUITests.swift; sourceTree = "<group>"; };
 		6089FB5E1FE900BE001D0C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC25A1C5B6CE94286E60154D /* Pods-Boxing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Boxing/Pods-Boxing.release.xcconfig"; sourceTree = "<group>"; };
+		E1A13B86E3450748F574FB7C /* Pods-Boxing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boxing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Boxing/Pods-Boxing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				059E08BB774EABF3CC9C2A50 /* Pods_Boxing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B12BA6FE91E902266621FD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B77CC39BF7B9C538CFE2F14 /* Pods_Boxing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D8CFF81E84D85146B1F3581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A13B86E3450748F574FB7C /* Pods-Boxing.debug.xcconfig */,
+				DC25A1C5B6CE94286E60154D /* Pods-Boxing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6089FB301FE900BE001D0C00 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				6089FB501FE900BE001D0C00 /* BoxingTests */,
 				6089FB5B1FE900BE001D0C00 /* BoxingUITests */,
 				6089FB3A1FE900BE001D0C00 /* Products */,
+				2D8CFF81E84D85146B1F3581 /* Pods */,
+				1B12BA6FE91E902266621FD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6089FB611FE900BE001D0C00 /* Build configuration list for PBXNativeTarget "Boxing" */;
 			buildPhases = (
+				6FA6F03CFDCC01DE17B60F65 /* [CP] Check Pods Manifest.lock */,
 				6089FB351FE900BE001D0C00 /* Sources */,
 				6089FB361FE900BE001D0C00 /* Frameworks */,
 				6089FB371FE900BE001D0C00 /* Resources */,
+				660FA83FF87A4A8E81AC8876 /* [CP] Embed Pods Frameworks */,
+				4434C6BFE0D2958C7A40920C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4434C6BFE0D2958C7A40920C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boxing/Pods-Boxing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		660FA83FF87A4A8E81AC8876 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Boxing/Pods-Boxing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FA6F03CFDCC01DE17B60F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boxing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6089FB351FE900BE001D0C00 /* Sources */ = {
@@ -424,6 +502,7 @@
 		};
 		6089FB621FE900BE001D0C00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A13B86E3450748F574FB7C /* Pods-Boxing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +518,7 @@
 		};
 		6089FB631FE900BE001D0C00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC25A1C5B6CE94286E60154D /* Pods-Boxing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
